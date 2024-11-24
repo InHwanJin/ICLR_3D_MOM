@@ -402,19 +402,7 @@
 
 
     <br/>
-<!--     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
 
-        <br/>
-        <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
-    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Quantitative Results</p></h2>
-    <br/>
-    
-        
-
-
-        <br/><p id="Quantitative_results_2"></p>
-    </div>
-    </div> -->
 
 
 <br/><p id="Visualization Results"></p>
@@ -568,6 +556,63 @@
     </div>
     </div>
 
+    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+
+        <br/>
+        <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
+    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Single Image Animation</p></h2>
+    <br/>
+<!--     <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">2) Single image animation model</p></h3> -->
+    <div class="slideshow-container" id="slideshow3">
+        <div class="video-slide">
+	    <center><img src="static/videos/abl2.png" alt="My Image" width="1000"></center>
+            <video width="1000" controls autoplay loop muted>
+                <source src="static/videos/2.single_image_animation/output_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-slide">
+	    <center><img src="static/videos/abl2.png" alt="My Image" width="1000"></center>
+            <video width="1000" controls autoplay loop muted>
+                <source src="static/videos/2.single_image_animation/output_2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-slide">
+	    <center><img src="static/videos/abl2.png" alt="My Image" width="1000"></center>
+            <video width="1000" controls autoplay loop muted>
+                <source src="static/videos/2.single_image_animation/output_3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+	<div class="video-slide">
+	    <center><img src="static/videos/abl2.png" alt="My Image" width="1000"></center>
+            <video width="1000" controls autoplay loop muted>
+                <source src="static/videos/2.single_image_animation/output_0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- Add more video slides as needed -->
+
+        <a class="prev" onclick="plusSlides(-1, 'slideshow3')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'slideshow3')">&#10095;</a>
+    </div>
+    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+	<strong>2) Single Image Animation Model:</strong> In our model, it is crucial to utilize a single image animation model that generates viewpoint videos by accurately reflecting 3D motion to train 4D Gaussians. 
+	Figure shows the results of trained 4D Gaussians using animated videos by two single image animation models, SLR-SFS and Text2Cinemagraph. 
+	Comparing the rendered 4D Gaussians, we observe that the motion is trained differently depending on the single image animation model. 
+	Additionally, training with viewpoint videos animated by SLR-SFS, our model produced better results.
+    <br/>
+    <br/>
+        
+
+
+        <br/><p id="Quantitative_results_2"></p>
+    </div>
+    </div>
+
+
+		
     <br/>
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
         <br/>
@@ -637,48 +682,7 @@
     <br/>
     <br/>
     <br/>
-    <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">2) Single image animation model</p></h3>
-    <div class="slideshow-container" id="slideshow3">
-        <div class="video-slide">
-	    <center><img src="static/videos/abl2.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/2.single_image_animation/output_1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="video-slide">
-	    <center><img src="static/videos/abl2.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/2.single_image_animation/output_2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="video-slide">
-	    <center><img src="static/videos/abl2.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/2.single_image_animation/output_3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-	<div class="video-slide">
-	    <center><img src="static/videos/abl2.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/2.single_image_animation/output_0.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <!-- Add more video slides as needed -->
-
-        <a class="prev" onclick="plusSlides(-1, 'slideshow3')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 'slideshow3')">&#10095;</a>
-    </div>
-    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
-	<strong>2) Single image animation model:</strong> In our model, it is crucial to utilize a single image animation model that generates viewpoint videos by accurately reflecting 3D motion to train 4D Gaussians. 
-	Figure shows the results of trained 4D Gaussians using animated videos by two single image animation models, SLR-SFS and Text2Cinemagraph. 
-	Comparing the rendered 4D Gaussians, we observe that the motion is trained differently depending on the single image animation model. 
-	Additionally, training with viewpoint videos animated by SLR-SFS, our model produced better results.
-    <br/>
-    <br/>
+    
     <br/>
     <br/>
     <br/>
