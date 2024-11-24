@@ -429,168 +429,158 @@
 
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
     <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
-        <br/>
-    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Experiments Results</p></h2>
-    <br/>
-	<h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">1) Results of Holynski Dataset</p></h3>
-    <div class="slideshow-container" id="slideshow_holynski">
-        <div class="video-slide">
-	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/project_page/holynski/test_19/side.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="video-slide">
-	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/project_page/holynski/test_26/zoom.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <a class="prev" onclick="plusSlides(-1, 'slideshow_holynski')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 'slideshow_holynski')">&#10095;</a>
-        </div>
-        <div class="slideshow-container" id="slideshow_holynski1">
-        <div class="video-slide">
-	    <center><img src="static/project_page/holynski_title.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/project_page/test_19.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="video-slide">
-	    <center><img src="static/project_page/holynski_title.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/project_page/test_26.mp44" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-	    
-        <!-- Add more video slides as needed -->
+	        <br/>
+	    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Experiments Results</p></h2>
+	    <br/>
+		<h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">1) Results of Holynski Dataset</p></h3>
+	    <div class="slideshow-container" id="slideshow_holynski">
+	        <div class="video-slide">
+		    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
+	            <video width="1000" controls autoplay loop muted>
+	                <source src="static/project_page/holynski/test_19/side.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+	        <div class="video-slide">
+		    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
+	            <video width="1000" controls autoplay loop muted>
+	                <source src="static/project_page/holynski/test_26/zoom.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+	        <a class="prev" onclick="plusSlides(-1, 'slideshow_holynski')">&#10094;</a>
+	        <a class="next" onclick="plusSlides(1, 'slideshow_holynski')">&#10095;</a>
+	        </div>
+	        <div class="slideshow-container" id="slideshow_holynski1">
+	        <div class="video-slide">
+		    <center><img src="static/project_page/holynski_title.png" alt="My Image" width="1000"></center>
+	            <video width="1000" controls autoplay loop muted>
+	                <source src="static/project_page/test_19.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+	        <div class="video-slide">
+		    <center><img src="static/project_page/holynski_title.png" alt="My Image" width="1000"></center>
+	            <video width="1000" controls autoplay loop muted>
+	                <source src="static/project_page/test_26.mp44" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+	        <!-- Add more video slides as needed -->
+	        <a class="prev" onclick="plusSlides(-1, 'slideshow_holynski1')">&#10094;</a>
+	        <a class="next" onclick="plusSlides(1, 'slideshow_holynski1')">&#10095;</a>
+	    </div>
+	    <br/>
+	    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+		    We present qualitative comparison results with other baseline methods. In this case, our proposed model, as an explicit representation, is projected to 2D video for comparison of results. 
+		    The process of separating the input image into LDIs in 3D-Cinemagraphy leads to artifacts on animated regions and fails to provide natural motion which results in reduced realism. 
+		    Similarly, Make-It-4D also utilizes LDIs to represent 3D for multi-view generation, which results in lower visual quality. 
+		    Additionally, due to unclear layer separation, objects appear fragmented or exhibit ghosting effects, where objects seem to leave behind afterimages.
+		    In contrast, the proposed model represents a complete 3D space with animations, providing less visual artifact and high rendering quality from various camera viewpoints. 
+		    Therefore, our method provides more photorealistic results compared to others for various input images.
+	    <br/>
+<!--     </div>
+    </div>
+    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+    <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
+	        <br/>
+	    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Experiments Results 2</p></h2> -->
+	    <br/>
+	    <br/>
+	    <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">2) Results of "In-the-Wild" Dataset</p></h3>
+	        <div class="slideshow-container" id="slideshow_InTheWilde">
+	        <div class="video-slide">
+		    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
+	            <video width="1000" controls autoplay loop muted>
+	                <source src="static/videos/5.additional_results1/side.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+	        <div class="video-slide">
+		    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
+	            <video width="1000" controls autoplay loop muted>
+	                <source src="static/videos/5.additional_results1/up34.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+		<div class="video-slide">
+		    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
+	            <video width="1000" controls autoplay loop muted>
+	                <source src="static/videos/5.additional_results1/side31.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+		<div class="video-slide">
+		    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
+	            <video width="1000" controls autoplay loop muted>
+	                <source src="static/videos/5.additional_results1/side39.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+		<div class="video-slide">
+		    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
+	            <video width="1000" controls autoplay loop muted>
+	                <source src="static/videos/5.additional_results1/side41.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+		<div class="video-slide">
+		    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
+	            <video width="1000" controls autoplay loop muted>
+	                <source src="static/videos/5.additional_results1/up1.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+		<div class="video-slide">
+		    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
+	            <video width="1000" controls autoplay loop muted>
+	                <source src="static/videos/5.additional_results1/up38.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+		<div class="video-slide">
+		    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
+	            <video width="1000" controls autoplay loop muted>
+	                <source src="static/videos/5.additional_results1/zoom35.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+		<div class="video-slide">
+		    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
+	            <video width="1000" controls autoplay loop muted>
+	                <source src="static/videos/5.additional_results1/zoom43.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+		<div class="video-slide">
+		    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
+	            <video width="1000" controls autoplay loop muted>
+	                <source src="static/videos/5.additional_results1/circle.mp4" type="video/mp4">
+	                Your browser does not support the video tag.
+	            </video>
+	        </div>
+	        <!-- Add more video slides as needed -->
+	        <a class="prev" onclick="plusSlides(-1, 'slideshow_InTheWilde')">&#10094;</a>
+	        <a class="next" onclick="plusSlides(1, 'slideshow_InTheWilde')">&#10095;</a>
+	    </div>
+		<br/>
+		    <center><img src="static/project_page/quanti.png" alt="My Image" width="1000"></center>
+		<br/>
+	        <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+			<strong>Results comparing our framework to the previous dynamic scene video model:</strong> In Table 1, we show the quantitative results of our method compared to other baselines on reference and non-reference metrics. 
+			Our approach outperforms the other baseline on all metrics in the context of view generation. 
+			In particular, our method achieved the highest scores in PSNR, SSIM, and LPIPS, indicating that the generated views are of high fidelity and perceptually similar to the ground truth views. 
+			Furthermore, we demonstrated that our proposed method outperforms existing methods on non-reference metrics by locally measuring the extent of noise and distortion in images using PIQE (Venkatanath et al., 2015). 
+			Additionally, we applied motion masks to the animated regions to compare the results. 
+			This shows that the quality of animation for designated areas in the 4D Gaussians rendered videos was realistic and of high fidelity.
+	            <br/>
+	    <br/><p id="add_Visualization Results"></p>
+	    <br/>
+	    </div>
+	    </div>
 
-        <a class="prev" onclick="plusSlides(-1, 'slideshow_holynski1')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 'slideshow_holynski1')">&#10095;</a>
-    </div>
-    
-    <br/>
-    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
-	    We present qualitative comparison results with other baseline methods. In this case, our proposed model, as an explicit representation, is projected to 2D video for comparison of results. 
-	    The process of separating the input image into LDIs in 3D-Cinemagraphy leads to artifacts on animated regions and fails to provide natural motion which results in reduced realism. 
-	    Similarly, Make-It-4D also utilizes LDIs to represent 3D for multi-view generation, which results in lower visual quality. 
-	    Additionally, due to unclear layer separation, objects appear fragmented or exhibit ghosting effects, where objects seem to leave behind afterimages.
-	    In contrast, the proposed model represents a complete 3D space with animations, providing less visual artifact and high rendering quality from various camera viewpoints. 
-	    Therefore, our method provides more photorealistic results compared to others for various input images.
-    <br/>
-    <br/>
-<!--     <center><img src="static/project_page/quanti.png" alt="My Image" width="1000"></center>
-    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
-		<strong>Results comparing our framework to the previous dynamic scene video model:</strong> Our approach outperforms the other baseline on all metrics in the context of view generation. 
-		In particular, our method achieved the highest scores in PSNR, SSIM, and LPIPS, indicating that the generated views are of high fidelity and perceptually similar to the ground truth views.
-		Furthermore, we demonstrated that our proposed method outperforms existing methods on non-reference metrics by locally measuring the extent of noise and distortion in images using PIQE.
-		Additionally, we applied motion masks to the animated regions to compare the results. 
-		This shows that the quality of animation for designated areas in the 4D Gaussians rendered videos was realistic and of high fidelity.
-            <br/>
-        <br/> -->
-    </div>
-    </div>
 
-	    
-    <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">2) Results of "In-the-Wild" Dataset</p></h3>
-        <div class="slideshow-container" id="slideshow_InTheWilde">
-        <div class="video-slide">
-	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/5.additional_results1/side.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="video-slide">
-	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/5.additional_results1/up34.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-	<div class="video-slide">
-	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/5.additional_results1/side31.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-	<div class="video-slide">
-	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/5.additional_results1/side39.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-	<div class="video-slide">
-	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/5.additional_results1/side41.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-	<div class="video-slide">
-	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/5.additional_results1/up1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-	<div class="video-slide">
-	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/5.additional_results1/up38.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-	<div class="video-slide">
-	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/5.additional_results1/zoom35.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-	<div class="video-slide">
-	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/5.additional_results1/zoom43.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-	<div class="video-slide">
-	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/5.additional_results1/circle.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <!-- Add more video slides as needed -->
-
-        <a class="prev" onclick="plusSlides(-1, 'slideshow_InTheWilde')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 'slideshow_InTheWilde')">&#10095;</a>
-    </div>
-	<br/>
-	    
-	    <center><img src="static/project_page/quanti.png" alt="My Image" width="1000"></center>
-	<br/>
-        <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
-		<strong>Results comparing our framework to the previous dynamic scene video model:</strong> In Table 1, we show the quantitative results of our method compared to other baselines on reference and non-reference metrics. 
-		Our approach outperforms the other baseline on all metrics in the context of view generation. 
-		In particular, our method achieved the highest scores in PSNR, SSIM, and LPIPS, indicating that the generated views are of high fidelity and perceptually similar to the ground truth views. 
-		Furthermore, we demonstrated that our proposed method outperforms existing methods on non-reference metrics by locally measuring the extent of noise and distortion in images using PIQE (Venkatanath et al., 2015). 
-		Additionally, we applied motion masks to the animated regions to compare the results. 
-		This shows that the quality of animation for designated areas in the 4D Gaussians rendered videos was realistic and of high fidelity.
-            <br/>
-
-	    
-    <br/><p id="add_Visualization Results"></p>
-    <br/>
-    </div>
-    </div>
+	
     <br/>
     <br/>
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
