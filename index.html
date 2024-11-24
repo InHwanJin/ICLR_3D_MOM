@@ -353,7 +353,7 @@
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Dynamic Scene Video</h1>
         <br/>
     <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
-    <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal; text-align: justify;">Recently, a field known as dynamic scene video has emerged, 
+    <h3><p style="color:black;font-size:1.5em; font-family: 'Times New Roman';font-weight: normal; text-align: justify;">Recently, a field known as dynamic scene video has emerged, 
 	    which creates videos with natural animations from specific camera perspectives using a combination of single image animation and 3D photography. 
 	    These methods utilize Layered Depth Images (LDIs), which are created by dividing a single image into multiple layers based on depth, to represent a pseudo 3D space. 
 	    However, there are limitations when attempting to discretely separate most elements, including fluids, in a continuous landscape, and 3D space cannot be fully represented this way.
@@ -456,6 +456,9 @@
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Visualization Results</p></h2>
     <br/>
     <br />
+	<h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">1) Results of Holynski Dataset</p></h3>
+    <br/>
+    <br />
     <div class="slideshow-container" id="slideshow_holynski">
         <div class="video-slide">
 	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
@@ -487,22 +490,10 @@
 	    In contrast, the proposed model represents a complete 3D space with animations, providing less visual artifact and high rendering quality from various camera viewpoints. 
 	    Therefore, our method provides more photorealistic results compared to others for various input images.
     <br/>
-
-    <br/><p id="add_Visualization Results"></p>
     <br/>
-    </div>
-    </div>
-
-    <br/>
-    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
-        <br/>
-        <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;text-align: justify;">
-    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Ablation Study</p></h2>
-	    <br/>
-	    <br/>
-    <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">1) Results of in the Wild Dataset</p></h3>
-	    <br />
-
+    <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">2) Results of "In-the-Wild" Dataset</p></h3>
+    <br />
+    <br />
     
         <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
 		<strong>Results comparing our framework to the previous dynamic scene video model:</strong> Our approach outperforms the other baseline on all metrics in the context of view generation. 
@@ -592,6 +583,22 @@
         <a class="prev" onclick="plusSlides(-1, 'slideshow_InTheWilde')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'slideshow_InTheWilde')">&#10095;</a>
     </div>
+
+
+	    
+    <br/><p id="add_Visualization Results"></p>
+    <br/>
+    </div>
+    </div>
+
+    <br/>
+    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+        <br/>
+        <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;text-align: justify;">
+    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Ablation Study</p></h2>
+	    <br/>
+	    <br/>
+
     
     <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">1) 3D Motion Optimization Module</p></h3>
     <!-- Flexbox를 이용하여 이미지 2개 병렬 배치 -->
