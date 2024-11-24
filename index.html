@@ -472,7 +472,53 @@
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Visualization Results</p></h2>
     <br/>
     <br />
-    <div class="slideshow-container" id="slideshow6">
+    <div class="slideshow-container" id="slideshow_holynski">
+        <div class="video-slide">
+	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
+            <video width="1000" controls autoplay loop muted>
+                <source src="static/project_page/holynski/test_19/side.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-slide">
+	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
+            <video width="1000" controls autoplay loop muted>
+                <source src="static/project_page/holynski/test_26/zoom.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <!-- Add more video slides as needed -->
+
+        <a class="prev" onclick="plusSlides(-1, 'slideshow_holynski')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'slideshow_holynski')">&#10095;</a>
+    </div>
+    
+    <br/>
+    <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+	    We present qualitative comparison results with other baseline methods. In this case, our proposed model, as an explicit representation, is projected to 2D video for comparison of results. 
+	    The process of separating the input image into LDIs in 3D-Cinemagraphy leads to artifacts on animated regions and fails to provide natural motion which results in reduced realism. 
+	    Similarly, Make-It-4D also utilizes LDIs to represent 3D for multi-view generation, which results in lower visual quality. 
+	    Additionally, due to unclear layer separation, objects appear fragmented or exhibit ghosting effects, where objects seem to leave behind afterimages.
+	    In contrast, the proposed model represents a complete 3D space with animations, providing less visual artifact and high rendering quality from various camera viewpoints. 
+	    Therefore, our method provides more photorealistic results compared to others for various input images.
+    <br/>
+
+    <br/><p id="add_Visualization Results"></p>
+    <br/>
+    </div>
+    </div>
+
+    <br/>
+    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+        <br/>
+        <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;text-align: justify;">
+    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Ablation Study</p></h2>
+	    <br/>
+	    <br/>
+    <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">1) Results of in the Wild Dataset</p></h3>
+	    <br />
+    <div class="slideshow-container" id="slideshow_InTheWilde">
         <div class="video-slide">
 	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
             <video width="1000" controls autoplay loop muted>
@@ -484,13 +530,6 @@
 	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
             <video width="1000" controls autoplay loop muted>
                 <source src="static/videos/5.additional_results1/up34.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="video-slide">
-	    <center><img src="static/videos/models.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/zoom.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -552,32 +591,10 @@
         </div>
         <!-- Add more video slides as needed -->
 
-        <a class="prev" onclick="plusSlides(-1, 'slideshow6')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 'slideshow6')">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1, 'slideshow_InTheWilde')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'slideshow_InTheWilde')">&#10095;</a>
     </div>
     
-    <br/>
-    <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
-	    We present qualitative comparison results with other baseline methods. In this case, our proposed model, as an explicit representation, is projected to 2D video for comparison of results. 
-	    The process of separating the input image into LDIs in 3D-Cinemagraphy leads to artifacts on animated regions and fails to provide natural motion which results in reduced realism. 
-	    Similarly, Make-It-4D also utilizes LDIs to represent 3D for multi-view generation, which results in lower visual quality. 
-	    Additionally, due to unclear layer separation, objects appear fragmented or exhibit ghosting effects, where objects seem to leave behind afterimages.
-	    In contrast, the proposed model represents a complete 3D space with animations, providing less visual artifact and high rendering quality from various camera viewpoints. 
-	    Therefore, our method provides more photorealistic results compared to others for various input images.
-    <br/>
-
-    <br/><p id="add_Visualization Results"></p>
-    <br/>
-    </div>
-    </div>
-
-    <br/>
-    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
-        <br/>
-        <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;text-align: justify;">
-    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Ablation Study</p></h2>
-	    <br/>
-	    <br/>
     <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">1) 3D Motion Optimization Module</p></h3>
     <!-- Flexbox를 이용하여 이미지 2개 병렬 배치 -->
     <div class="flex-container">
