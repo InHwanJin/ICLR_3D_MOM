@@ -555,7 +555,73 @@
     <br/>
     </div>
     </div>
+
     <br/>
+    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+
+        <br/>
+        <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
+    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">3D Motion Optimization</p></h2>
+    <br/>
+    <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">1) 3D Motion Optimization Module</p></h3>
+    <!-- Flexbox를 이용하여 이미지 2개 병렬 배치 -->
+    <div class="flex-container">
+        <center><img src="static/videos/ablation1.png" alt="My Image" width="380"></center>
+        <center><img src="static/videos/table2.png" alt="My Image" width="580"></center>
+    </div>
+    <div class="slideshow-container" id="slideshow2">
+        <div class="video-slide">
+	    <center><img src="static/videos/3DMotion.png" alt="My Image" width="1000"></center>
+            <video width="1000" controls autoplay loop muted>
+                <source src="static/videos/1.3D_motion_optimzation/output_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+	    <center><img src="static/videos/b.png" alt="My Image" width="1000"></center>
+        </div>
+        <div class="video-slide">
+	    <center><img src="static/videos/3DMotion.png" alt="My Image" width="1000"></center>
+            <video width="1000" controls autoplay loop muted>
+                <source src="static/videos/1.3D_motion_optimzation/output_2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+	    <center><img src="static/videos/b.png" alt="My Image" width="1000"></center>
+        </div>
+        <div class="video-slide">
+	    <center><img src="static/videos/3DMotion.png" alt="My Image" width="1000"></center>
+            <video width="1000" controls autoplay loop muted>
+                <source src="static/videos/1.3D_motion_optimzation/output_3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+	    <center><img src="static/videos/b.png" alt="My Image" width="1000"></center>
+        </div>
+	<div class="video-slide">
+	    <center><img src="static/videos/3DMotion.png" alt="My Image" width="1000"></center>
+            <video width="1000" controls autoplay loop muted>
+                <source src="static/videos/1.3D_motion_optimzation/output_0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+	    <center><img src="static/videos/b.png" alt="My Image" width="1000"></center>
+        </div>
+        <!-- Add more video slides as needed -->
+        <a class="prev" onclick="plusSlides(-1, 'slideshow2')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'slideshow2')">&#10095;</a>
+    </div>
+    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+	<strong>1) 3D Motion Optimization Module:</strong> Independently estimated 2D motion from multi-view images can result in different motion values for the same region in 3D space.
+	Directly using these 2D motions to animate viewpoint videos can fail to train 4D Gaussians to represent natural motion.
+	Table II shows the results of EPE between multi-view flows with and without the 3D Motion Optimization Module. 
+	The estimated motions are projected to the center point through a depth map for the same position measurement. 
+	The results indicate that without 3D Motion Optimization, estimated flows are significantly different for the same positions, while our 3D motion demonstrates outstanding performance in consistency across entire viewpoints with almost no variance. 
+	(a) shows the visualized results of 2D motion and projected 3D motion. 
+	Similarly, it indicates that 3D motion represents motion information in 3D space, which ensures consistency when projected to different viewpoints. 
+	We animated viewpoint videos using each motion and trained 4D Gaussians on multi-view videos. 
+	However, as shown in (b), the rendered video of 4D Gaussians and estimated optical flow have the lack of motion consistency in the viewpoint videos caused unnatural movements.
+        
+    <br/>
+    <br/>
+
+
+		
     <br/>
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
 
@@ -623,62 +689,7 @@
 	    <br/>
 
     
-    <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">1) 3D Motion Optimization Module</p></h3>
-    <!-- Flexbox를 이용하여 이미지 2개 병렬 배치 -->
-    <div class="flex-container">
-        <center><img src="static/videos/ablation1.png" alt="My Image" width="380"></center>
-        <center><img src="static/videos/table2.png" alt="My Image" width="580"></center>
-    </div>
-    <div class="slideshow-container" id="slideshow2">
-        <div class="video-slide">
-	    <center><img src="static/videos/3DMotion.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/1.3D_motion_optimzation/output_1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-	    <center><img src="static/videos/b.png" alt="My Image" width="1000"></center>
-        </div>
-        <div class="video-slide">
-	    <center><img src="static/videos/3DMotion.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/1.3D_motion_optimzation/output_2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-	    <center><img src="static/videos/b.png" alt="My Image" width="1000"></center>
-        </div>
-        <div class="video-slide">
-	    <center><img src="static/videos/3DMotion.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/1.3D_motion_optimzation/output_3.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-	    <center><img src="static/videos/b.png" alt="My Image" width="1000"></center>
-        </div>
-	<div class="video-slide">
-	    <center><img src="static/videos/3DMotion.png" alt="My Image" width="1000"></center>
-            <video width="1000" controls autoplay loop muted>
-                <source src="static/videos/1.3D_motion_optimzation/output_0.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-	    <center><img src="static/videos/b.png" alt="My Image" width="1000"></center>
-        </div>
-        <!-- Add more video slides as needed -->
-        <a class="prev" onclick="plusSlides(-1, 'slideshow2')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 'slideshow2')">&#10095;</a>
-    </div>
-    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
-	<strong>1) 3D Motion Optimization Module:</strong> Independently estimated 2D motion from multi-view images can result in different motion values for the same region in 3D space.
-	Directly using these 2D motions to animate viewpoint videos can fail to train 4D Gaussians to represent natural motion.
-	Table II shows the results of EPE between multi-view flows with and without the 3D Motion Optimization Module. 
-	The estimated motions are projected to the center point through a depth map for the same position measurement. 
-	The results indicate that without 3D Motion Optimization, estimated flows are significantly different for the same positions, while our 3D motion demonstrates outstanding performance in consistency across entire viewpoints with almost no variance. 
-	(a) shows the visualized results of 2D motion and projected 3D motion. 
-	Similarly, it indicates that 3D motion represents motion information in 3D space, which ensures consistency when projected to different viewpoints. 
-	We animated viewpoint videos using each motion and trained 4D Gaussians on multi-view videos. 
-	However, as shown in (b), the rendered video of 4D Gaussians and estimated optical flow have the lack of motion consistency in the viewpoint videos caused unnatural movements.
-        
-    <br/>
-    <br/>
+
     <br/>
     <br/>
     <br/>
