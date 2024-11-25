@@ -156,16 +156,17 @@
 
 <body>
 	
-<div style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%); background-color: white; padding: 10px; text-align: center; white-space: nowrap;">
-  <a href="#section1" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none;">3D Motion Optimization Module</a>
-  <a href="#section2" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none;">Results of Holynski Dataset</a>
-  <a href="#section3" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none;">Results of "In-the-Wild" Dataset</a>
-  <a href="#section4" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none;">3D Scene Generation + Dynamic Scene Video</a>
-  <a href="#section5" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none;">Comparative Result with ViVidDream</a>
-  <a href="#section6" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none;">Single Image Animation</a>
-  <a href="#section7" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none;">4D Gaussian Splatting</a>
-  <a href="#section8" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none;">Long Video Results</a>
+<div style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%); background-color: white; padding: 10px; text-align: center; white-space: nowrap; z-index: 9999; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+  <a href="#section1" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">3D Motion Optimization Module</a>
+  <a href="#section2" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">Results of Holynski Dataset</a>
+  <a href="#section3" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">Results of "In-the-Wild" Dataset</a>
+  <a href="#section4" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">3D Scene Generation + Dynamic Scene Video</a>
+  <a href="#section5" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">Comparative Result with ViVidDream</a>
+  <a href="#section6" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">Single Image Animation</a>
+  <a href="#section7" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">4D Gaussian Splatting</a>
+  <a href="#section8" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">Long Video Results</a>
 </div>
+
 
 
 
@@ -363,7 +364,7 @@
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Dynamic Scene Video</h1>
         <br/>
     <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
-    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal; text-align: justify;">Recently, a field known as dynamic scene video has emerged, 
+    <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal; text-align: justify;">Recently, a field known as dynamic scene video has emerged, 
 	    which creates videos with natural animations from specific camera perspectives using a combination of single image animation and 3D photography. 
 	    These methods utilize Layered Depth Images (LDIs), which are created by dividing a single image into multiple layers based on depth, to represent a pseudo 3D space. 
 	    However, there are limitations when attempting to discretely separate most elements, including fluids, in a continuous landscape, and 3D space cannot be fully represented this way.
@@ -377,7 +378,7 @@
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Abstract</p></h2>
     <br/>
     <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
-    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">To achieve realistic immersion in landscape images, 
+    <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">To achieve realistic immersion in landscape images, 
 	    fluids such as water and clouds need to move within the image while revealing new scenes from various camera perspectives. 
 	    Recently, a field called dynamic scene video has emerged, which combines single image animation with 3D photography. 
 	    These methods use pseudo 3D space, implicitly represented with Layered Depth Images (LDIs). 
@@ -399,7 +400,7 @@
         <br/>
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Overall Framework</p></h2>
     <br/>
-    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+    <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
         <strong>The overview of our pipeline.</strong>: Our goal is to optimize 4D Gaussians to represent a complete 3D space, including animation, from a single image.
 	    <strong>(a)</strong> A depth map is estimated from the given single image, and it is converted into a point cloud. 
 	    For optimizing the 3D Gaussians, multi-view RGB images are rendered according to the defined camera trajectory. 
@@ -426,7 +427,7 @@
 	    <h2 id="section1"> </h2>
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">3D Motion Optimization Module</p></h2>
 	    <br>
-    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+    <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
 	    <strong><span style="color: red;">[UPDATED!]</span> 3D Motion Optimization Module.</strong> To maintain consistency of motion across multi-views, 3D motion is defined from the point cloud and projected into 2D images using camera parameters.
 	    The L1 loss between the projected 2D motion and the estimated 2D motion map as the ground truth is computed, minimizing the sum of losses for multi-view to optimize the 3D motion.
     </p></h3>
@@ -490,7 +491,7 @@
 	        <a class="next" onclick="plusSlides(1, 'slideshow_holynski1')">&#10095;</a>
 	    </div>
 	    <br/>
-	    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+	    <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
 		    We present qualitative comparison results with other baseline methods. In this case, our proposed model, as an explicit representation, is projected to 2D video for comparison of results. 
 		    The process of separating the input image into LDIs in 3D-Cinemagraphy leads to artifacts on animated regions and fails to provide natural motion which results in reduced realism. 
 		    Similarly, Make-It-4D also utilizes LDIs to represent 3D for multi-view generation, which results in lower visual quality. 
@@ -586,7 +587,7 @@
 		<br/>
 		    <center><img src="static/project_page/quanti.png" alt="My Image" width="1000"></center>
 		<br/>
-	        <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+	        <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
 			<strong>Results comparing our framework to the previous dynamic scene video model:</strong> In Table 1, we show the quantitative results of our method compared to other baselines on reference and non-reference metrics. 
 			Our approach outperforms the other baseline on all metrics in the context of view generation. 
 			In particular, our method achieved the highest scores in PSNR, SSIM, and LPIPS, indicating that the generated views are of high fidelity and perceptually similar to the ground truth views. 
@@ -610,7 +611,7 @@
     <br/><h2 id="section4"> </h2>
     <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;"><strong><span style="color: red;">[UPDATED!]</span></strong> 1) 3D Scene Generation + Dynamic Scene Video</p></h3>
 	<br>
-    		<h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+    		<h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
 	    Our framework is designed to seamlessly incorporate 3D scene generation models, facilitating straightforward spatial expansion. 
 	    The figure below shows the results of incorporating the 3D Scene Generation model, LucidDreamer (Chung et al., 2023), into our method. 
 	    LucidDreamer converts single images into point clouds and progressively fills empty areas with an inpainting model, enabling spatio temporal expansion when incorporated into our framework. 
@@ -658,7 +659,7 @@
     <br/><h2 id="section5"> </h2>
     <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;"><strong><span style="color: red;">[UPDATED!]</span></strong> 2) Comparative Result with VividDream</p></h3>
 		<br>
-    		<h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+    		<h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
 	    The figure below compares the results of incorporate our framework with LucidDreamer (Chung et al., 2023) and Viewcrafter (Yu et al., 2024),
 			which generates multi-view video conditioned on point cloud rendered video in single diffusion pass, with VividDream (Lee et al., 2024). 
 			Additionally, we conduct comparisons with recent work on the 4D Scene Generation model, VividDream (Lee et al., 2024). 
@@ -746,7 +747,7 @@
         <a class="prev" onclick="plusSlides(-1, 'slideshow2')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'slideshow2')">&#10095;</a>
     </div>
-    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+    <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
 	<strong>3D Motion Optimization Module:</strong> Independently estimated 2D motion from multi-view images can result in different motion values for the same region in 3D space.
 	Directly using these 2D motions to animate viewpoint videos can fail to train 4D Gaussians to represent natural motion.
 	Table II shows the results of EPE between multi-view flows with and without the 3D Motion Optimization Module. 
@@ -774,7 +775,7 @@
         <br/><h2 id="section6"> </h2>
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;"><strong><span style="color: red;">[UPDATED!]</span></strong> Single Image Animation</p></h2>
     <br/>
-	<h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+	<h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
 		In our model, it is crucial to utilize a single image animation model that precisely estimate 2D motion from Multi-view images and generate multi-view videos by accurately reflecting 3D motion.
 		The figure below shows the results of trained 4D Gaussians using animated videos by different single image animation models, SLR-SFS (Fan et al., 2023), Text2Cinemagraph (Mahapatra et al., 2023) and StyleCineGAN (Choi et al., 2024). 
 		The Eulerian flows estimated by each model enable the generation of consistent 3D motion through 3D-MOM, which facilitates the restoration of natural motion in 4D scene. 
@@ -814,7 +815,7 @@
         <a class="prev" onclick="plusSlides(-1, 'slideshow3')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'slideshow3')">&#10095;</a>
     </div>
-    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+    <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
 	<strong>Single Image Animation Model:</strong> In our model, it is crucial to utilize a single image animation model that generates viewpoint videos by accurately reflecting 3D motion to train 4D Gaussians. 
 	Figure shows the results of trained 4D Gaussians using animated videos by two single image animation models, SLR-SFS and Text2Cinemagraph. 
 	Comparing the rendered 4D Gaussians, we observe that the motion is trained differently depending on the single image animation model. 
@@ -879,7 +880,7 @@
         <a class="prev" onclick="plusSlides(-1, 'slideshow4')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'slideshow4')">&#10095;</a>
     </div>
-    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+    <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
         <strong>Effect of 3D motion initialization:</strong> To verify the importance of 3D motion in training 4D Gaussians, we compared the results of our method with and without 3D motion initialization. 
 	When applying animation to fluids, repeated patterns occurred. In Table III, it shows EPE score of estimated optical flow from each rendered video. 
 	It indicates that the explicit representation of 4D Gaussians, which train multi-views and motion jointly, finds it difficult to capture the overall motion
@@ -981,7 +982,7 @@
         <a class="prev" onclick="plusSlides(-1, 'slideshow5')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'slideshow5')">&#10095;</a>
     </div>
-    <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+    <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
 	<strong>Effect of Two-stage training:</strong> To achieve faster and more stable results with our algorithm, we separated the 4D Gaussians learning process by viewpoints and time axis. 
 	In step 1, we trained 3D Gaussians using all viewpoints, and in step 2, we trained 4D Gaussians using videos from sampled view-points. 
 	Figure shows the results of training 4D Gaussians with animated videos for all viewpoints, while the bottom shows the results of our two-stage training approach trained on only three viewpoint videos. 
@@ -1006,7 +1007,7 @@
         <br/><h2 id="section8"> </h2>
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;"><strong><span style="color: red;">[UPDATED!]</span></strong> Long Video Results</p></h2>
     <br/>
-	<h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+	<h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
 	<strong>Long Video Results:</strong> Recent diffusion-based T2V models capable of simultaneously generating multi-angle images and cinemagraphy, similar to Dynamic Scene Videos, have emerged (Shi et al., 2024), (Xing et al., 2025). 
 	    However, these models experience a sharp increase in computational load with the number of frames, limiting them to a maximum of 30 frames per inference and requiring lengthy inference times for each new view. 
 	    In contrast, our framework can reconstruct long durations using explicit 4D Gaussians, allowing for the creation of novel view videos in a shorter time and at a lower cost. 
@@ -1085,7 +1086,7 @@
         <a class="prev" onclick="plusSlides(-1, 'slideshow_long')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'slideshow_long')">&#10095;</a>
     </div> -->
-<!--     <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+<!--     <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
 	<strong>5) Long Video Results:</strong> xzczcxzc
     <br/>
     <br/> --> -->
@@ -1109,7 +1110,7 @@
 <!--         <a class="prev" onclick="plusSlides(-1, 'slideshow_ME')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'slideshow_ME')">&#10095;</a> -->
     </div> -->
-<!--     <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+<!--     <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
 	<strong>6) Motion Estimation & Video Generator Ablation Study:</strong> xzczcxzc -->
 
 <!--     <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">7) Qualitative Results using Deformable 3D</p></h3>
@@ -1137,7 +1138,7 @@
         <a class="prev" onclick="plusSlides(-1, 'slideshow_DF3D')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'slideshow_DF3D')">&#10095;</a> -->
     </div> -->
-<!--     <h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+<!--     <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
 	<strong>Qualitative Results using Deformable 3D:</strong> xzczcxzc
     <br/>
     <br/>
