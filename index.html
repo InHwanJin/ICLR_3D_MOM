@@ -157,29 +157,31 @@
 <body>
 	
 <div style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%); background-color: white; padding: 10px; text-align: center; white-space: nowrap; z-index: 9999; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-  <a href="#section1" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">3D Motion Optimization Module</a>
-  <a href="#section2" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">Results of Holynski Dataset</a>
-  <a href="#section3" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">Results of "In-the-Wild" Dataset</a>
-  <a href="#section4" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">3D Scene Generation + Dynamic Scene Video</a>
-  <a href="#section5" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">Comparative Result with ViVidDream</a>
-  <a href="#section6" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">Single Image Animation</a>
-  <a href="#section7" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">4D Gaussian Splatting</a>
-  <a href="#section8" style="display: inline-block; margin: 0 10px; padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white;">Long Video Results</a>
+  <a href="#section1" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">Dynamic Scene Video</a>
+  <a href="#section2" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">Overall Framework</a>
+  <a href="#section3" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">3D Motion Optimization Module</a>
+  <a href="#section4" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">Experiments Results</a>
+  <a href="#section5" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">Application: 4D Scene Generation</a>
+  <a href="#section6" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">3D Motion Optimization</a>
+  <a href="#section7" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">Single Image Animation</a>
+  <a href="#section8" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">3D Motion Initialization</a>
+  <a href="#section9" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">4D Gaussian Splatting</a>
+  <a href="#section10" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">Effect of Two-stage Training</a>
+  <a href="#section11" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">Long Video Results</a>
 </div>
 
 
 
 
-<!-- <div style="position: fixed; top: 10px; left: 10px; background-color: white; padding: 10px;">
-  <button onclick="location.href='#section1'">3D Motion Optimization Module</button>
-  <button onclick="location.href='#section2'">Results of Holynski Dataset</button>
-  <button onclick="location.href='#section3'">Results of "In-the-Wild" Dataset</button>
-  <button onclick="location.href='#section4'">3D Scene Generation + Dynamic Scene Video</button>
-  <button onclick="location.href='#section5'">Comparative Result with ViVidDream</button>
-  <button onclick="location.href='#section6'">Single Image Animation</button>
-  <button onclick="location.href='#section7'">4D Gaussian Splatting</button>
-  <button onclick="location.href='#section8'">Long Video Results</button>
-</div> -->
+
+
+
+
+
+
+
+
+
 	
 <!--     <div id="menu">
         <ul>
@@ -358,7 +360,9 @@
     <br/>
     </div>
     </div>
-    <br/>
+    <br/><h2 id="section1"> </h2>
+	<br/>
+	<br/>
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
         <br/>
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Dynamic Scene Video</h1>
@@ -397,7 +401,9 @@
     <br/>
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
     <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
-        <br/>
+        <br/><h2 id="section2"> </h2>
+	    <br/>
+	    <br/>
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Overall Framework</p></h2>
     <br/>
     <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
@@ -419,12 +425,13 @@
     </div>
     </div>
 
-	<h2 id="section1"> </h2>
+	
 	    <br/>
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
     <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
-        <br/>
-	    
+        <br/><h2 id="section3"> </h2>
+	    <br/>
+	    <br/>
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">3D Motion Optimization Module</p></h2>
 	    <br>
     <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
@@ -444,10 +451,11 @@
     <br/>
     </div>
     </div>
-	<h2 id="section2"> </h2>
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
     <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
-	        <br/>
+	<br/><h2 id="section4"> </h2>
+	    <br/>
+	    <br/>
 	    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Experiments Results</p></h2>
 	    <br/>
 	    
@@ -501,7 +509,6 @@
 	    <br/>
 <!--     </div>
     </div>
-	    <h2 id="section3"> </h2>
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
     <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
 	        <br/>
@@ -603,11 +610,13 @@
 
 
 	
-    <br/><br/><h2 id="section4"> </h2>
+    <br/>
     <br/>
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
     <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
-        <br/>
+        <br/><h2 id="section5"> </h2>
+	    <br/>
+	    <br/>
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Application: 4D Scene Generation</p></h2>
     
     <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;"><strong><span style="color: red;">[UPDATED!]</span></strong> 1) 3D Scene Generation + Dynamic Scene Video</p></h3>
@@ -656,7 +665,7 @@
         <a class="prev" onclick="plusSlides(-1, 'slideshow_Lucid1')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'slideshow_Lucid1')">&#10095;</a>
     </div>
-    <br/><br/><h2 id="section5"> </h2>
+    <br/>
 	<br/>
 	<br/>
 	<br/>
@@ -705,7 +714,9 @@
     <br/>
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
     <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
-        <br/>
+        <br/><h2 id="section6"> </h2>
+	    <br/>
+	    <br/>
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">3D Motion Optimization</p></h2>
     <br/>
 <!--     <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;">1) 3D Motion Optimization Module</p></h3> -->
@@ -772,11 +783,13 @@
     </div>
 
     <br/>
-    <br/><br/><h2 id="section6"> </h2>
+    <br/>
 		
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
     <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
-        
+        <br/><h2 id="section7"> </h2>
+	    <br/>
+	    <br/>
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;"><strong><span style="color: red;">[UPDATED!]</span></strong> Single Image Animation</p></h2>
     <br/>
 	<h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
@@ -837,7 +850,9 @@
 
         
 		
-    <br/>
+    <br/><h2 id="section8"> </h2>
+	    <br/
+	    <br/>
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
 
         <br/>
@@ -898,13 +913,22 @@
     </div>
     </div>
 
-    <br/><br/><h2 id="section7"> </h2>
+    <br/>
     <br/>
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
     <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
-        
+        <br/><h2 id="section9"> </h2>
+	    <br/>
+	    <br/>
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;"><strong><span style="color: red;">[UPDATED!]</span></strong> 4D Gaussian Splatting</p></h2>
     <br/>
+	<h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+	Since our framework utilizes 4D Gaussians to model complete 3D spaces with motion, the expressiveness of the model itself significantly influences the quality of the final results. 
+	    The figure below shows the results of implementing the Deformable-3D (Yang et al., 2024) within our framework. 
+	    Compared to previous results using 4D-GS (Wu et al., 2024), it reconstructs low-fidelity 4D scenes and generates videos with reduced realism. 
+	    Therefore, by utilizing 4D-GS (Wu et al., 2024), our framework is capable of producing more immersive Dynamic Scene Videos. 
+	    This experiment demonstrates the adaptability of our model, and as advancements are made in the field of 4D Gaussians, the performance of our framework also improves.
+	    
 	    <div class="flex-container">
     </div>
         <div class="slideshow-container" id="slideshow_4D_ablation">
@@ -947,7 +971,9 @@
     <br/>
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
     <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
-        <br/>
+        <br/><h2 id="section10"> </h2>
+	    <br/>
+	    <br/>
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Effect of Two-stage training</p></h2>
     <br/>
         <center><img src="static/videos/table4.png" alt="My Image" width="1000"></center>
@@ -1004,8 +1030,9 @@
     </div>
     </div>
 
-    <br/><br/><h2 id="section8"> </h2>
+    <br/><h2 id="section11"> </h2>
     <br/>
+	<br/>	
     <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
     <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
         
