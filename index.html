@@ -451,6 +451,7 @@
 	    <br/>
 	    <h2 id="section2"> </h2>
 		<h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;"><strong><span style="color: red;">[UPDATED!]</span></strong> 1) Results of Holynski Dataset</p></h3>
+	    	    
 	    <div class="slideshow-container" id="slideshow_holynski">
 	        <div class="video-slide">
 		    <center><img src="static/title/holynski_2.png" alt="My Image" width="1000"></center>
@@ -608,6 +609,12 @@
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Application: 4D Scene Generation</p></h2>
     <br/><h2 id="section4"> </h2>
     <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;"><strong><span style="color: red;">[UPDATED!]</span></strong> 1) 3D Scene Generation + Dynamic Scene Video</p></h3>
+	<br>
+    		<h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+	    Our framework is designed to seamlessly incorporate 3D scene generation models, facilitating straightforward spatial expansion. 
+	    The figure below shows the results of incorporating the 3D Scene Generation model, LucidDreamer (Chung et al., 2023), into our method. 
+	    LucidDreamer converts single images into point clouds and progressively fills empty areas with an inpainting model, enabling spatio temporal expansion when incorporated into our framework. 
+	    This incorporation enables the creation of videos with more natural motion and expansive views.
 	    <div class="flex-container">
     </div>
         <div class="slideshow-container" id="slideshow_Lucid">
@@ -650,6 +657,16 @@
     <br/>
     <br/><h2 id="section5"> </h2>
     <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;"><strong><span style="color: red;">[UPDATED!]</span></strong> 2) Comparative Result with VividDream</p></h3>
+		<br>
+    		<h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+	    The figure below compares the results of incorporate our framework with LucidDreamer (Chung et al., 2023) and Viewcrafter (Yu et al., 2024),
+			which generates multi-view video conditioned on point cloud rendered video in single diffusion pass, with VividDream (Lee et al., 2024). 
+			Additionally, we conduct comparisons with recent work on the 4D Scene Generation model, VividDream (Lee et al., 2024). 
+			Unlike our approach, VividDream directly generates multi-view videos through the T2V model without utilizing motion estimation for temporal expansion.  
+			We render the comparisons using the closest matching images and cameras available, as the code and data were not disclosed. 
+			Since VividDream (Lee et al., 2024) generates videos independently from multiple views, this approach results in motion ambiguity that leads to blurred reconstructions in fluid scenes, 
+			failing to accurately capture various motions. 
+			In contrast, our method estimates consistent 3D motion based on 2D motion, subsequently generating videos that achieve high-quality video with more natural motion.
         <div class="slideshow-container" id="slideshow_vivid">
         <div class="video-slide">
 	    <center><img src="static/title/vivid.png" alt="My Image" width="1000"></center>
