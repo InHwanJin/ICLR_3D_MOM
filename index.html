@@ -774,8 +774,13 @@
         <br/><h2 id="section6"> </h2>
     <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;"><strong><span style="color: red;">[UPDATED!]</span></strong> Single Image Animation</p></h2>
     <br/>
-    <!--     <h3><p style="font-size:1.3em; font-family: 'Times New Roman';font-weight: normal;"><strong><span style="color: red;">[UPDATED!]</span></strong> 2) Single image animation model</p></h3> -->
-    <div class="slideshow-container" id="slideshow3">
+	<h3><p style="color:black;font-size:1.1em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+		In our model, it is crucial to utilize a single image animation model that precisely estimate 2D motion from Multi-view images and generate multi-view videos by accurately reflecting 3D motion.
+		The figure below shows the results of trained 4D Gaussians using animated videos by different single image animation models, SLR-SFS (Fan et al., 2023), Text2Cinemagraph (Mahapatra et al., 2023) and StyleCineGAN (Choi et al., 2024). 
+		The Eulerian flows estimated by each model enable the generation of consistent 3D motion through 3D-MOM, which facilitates the restoration of natural motion in 4D scene. 
+		Additionally StyleCineGAN (Choi et al., 2024) can generate natural videos not only of fluids like water but also of clouds and smoke, allowing for the generate various motions when utilized to our framework. 
+	    
+	    <div class="slideshow-container" id="slideshow3">
         <div class="video-slide">
 	    <center><img src="static/title/single.png" alt="My Image" width="1000"></center>
             <video width="1000" controls autoplay loop muted>
