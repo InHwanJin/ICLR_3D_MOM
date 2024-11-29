@@ -167,7 +167,8 @@
   <a href="#section8" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">3D Motion Initialization</a>
   <a href="#section9" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">4D Gaussian Splatting</a>
   <a href="#section10" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">Effect of Two-stage Training</a>
-  <a href="#section11" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">Long Video Results</a>
+  <a href="#section11" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">Multi-view Rendered RGB Images</a>
+  <a href="#section12" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">Long Video Results</a>
 </div>
 
 
@@ -1073,6 +1074,47 @@
     </div>
 
     <br/><h2 id="section11"> </h2>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+    <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
+            <br/>
+    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;"><span style="font-family: 'Pretendard Variable'; font-size: 0.8em; color: red;">[UPDATED!]</span> Supplementary Video for Sec 3.1: Multi-view Rendered RGB Images</p></h2>
+    <br/>
+	        <br/>
+        <div class="slideshow-container" id="slideshow5">
+        <div class="video-slide">
+            <video width="1000" controls autoplay loop muted>
+                <source src="static/project_page/last/1129.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- Add more video slides as needed -->
+
+        <a class="prev" onclick="plusSlides(-1, 'slideshow5')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'slideshow5')">&#10095;</a>
+    </div>
+<!--     <h3><p style="color:black;font-size:1.0em; font-family: 'Times New Roman';font-weight: normal;text-align: justify;">
+	<strong>Effect of Two-stage training:</strong> To achieve faster and more stable results with our algorithm, we separated the 4D Gaussians learning process by viewpoints and time axis. 
+	In step 1, we trained 3D Gaussians using all viewpoints, and in step 2, we trained 4D Gaussians using videos from sampled view-points. 
+	Figure shows the results of training 4D Gaussians with animated videos for all viewpoints, while the bottom shows the results of our two-stage training approach trained on only three viewpoint videos. 
+	This demonstrates that our training method produces results almost identical to those obtained by training with videos from all viewpoints. 
+	Additionally, as shown in Table IV , which was evaluated on a sample validation set, our method not only maintains high performance but also achieves a significant efficiency improvement. 
+	It is over 30 times faster in generating videos and requires about one-third less time to train the 4D Gaussians, demonstrating an optimal balance between speed and accuracy. -->
+    <br/>
+    <br/>
+
+	    
+        <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;">
+        </p></h3>
+            <br/>
+    <br/><p id="Quantitative_results_1"></p>
+    </div>
+    </div>
+    	    
+    <br/><h2 id="section12"> </h2>
     <br/>
 	<br/>	
 	    <br/>
