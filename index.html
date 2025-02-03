@@ -150,11 +150,6 @@
 	    font: "Times New Roman"
         }
 
-        .button-container {
-            text-align: center;
-            margin-top: 15px;
-        }
-
 	.button-container {
 	    text-align: center;
 	    margin-top: 15px;
@@ -174,14 +169,12 @@
 	    border-radius: 15px;
 	    border: 1px solid #ccc;
 	    transition: background-color 0.3s, transform 0.2s;
-	    width: auto; /* 원래 크기로 복원 */
-	    min-width: unset; /* 버튼 최소 크기 설정 제거 */
-	    text-align: center; /* 텍스트 중앙 정렬 */
+	    text-align: center;
 	}
 	
-	.icon-button i {
+	.icon-button .icon {
 	    margin-right: 8px;
-	    font-size: 1em; /* 아이콘 크기 원래대로 */
+	    font-size: 1em;
 	}
 	
 	.icon-button:hover {
@@ -256,15 +249,36 @@
 	<p style="color:gray; font-size:0.8em; text-align:center; font-family: 'Times New Roman'">
 	    <sup>1</sup> Pukyong National University, <sup>2</sup> Pusan National University, <sup>3</sup> Busan MBC, <sup>4</sup> DM Studio
 	</p>
-	<!-- 아이콘 버튼 -->
+	
 	<div class="button-container">
-	    <a href="https://github.com/cvsp-lab/ICLR_3D_MOM" target="_blank" class="icon-button">
-	        <i class="fab fa-github"></i> GitHub
+	    <!-- Paper Link -->
+	    <a href="zz"
+	       class="icon-button">
+	        <span class="icon">
+	            <i class="fas fa-file-pdf"></i>
+	        </span>
+	        <span>Paper</span>
 	    </a>
-	    <a href="https://example.com/paper" target="_blank" class="icon-button">
-	        <i class="fas fa-file-alt"></i> Paper
+	
+	    <!-- arXiv Link -->
+	    <a href="zz"
+	       class="icon-button">
+	        <span class="icon">
+	            <i class="ai ai-arxiv"></i>
+	        </span>
+	        <span>arXiv</span>
+	    </a>
+	
+	    <!-- GitHub Link -->
+	    <a href="https://github.com/cvsp-lab/ICLR_3D_MOM"
+	       class="icon-button">
+	        <span class="icon">
+	            <i class="fab fa-github"></i>
+	        </span>
+	        <span>Code</span>
 	    </a>
 	</div>
+
 
 
     <br/>
