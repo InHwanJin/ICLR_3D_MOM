@@ -144,13 +144,18 @@
             margin: 20px auto; /* 센터 정렬을 위해 추가 */
         }
 
+        /* 첨자 크기 줄이기 */
+        sup {
+            font-size: 0.7em;
+        }
+
         .button-container {
             text-align: center;
             margin-top: 15px;
         }
 
         .icon-button {
-            display: inline-flex;
+            display: flex;
             align-items: center;
             justify-content: center;
             background-color: #f5f5f5;
@@ -163,6 +168,8 @@
             border-radius: 15px;
             border: 1px solid #ccc;
             transition: background-color 0.3s, transform 0.2s;
+            width: auto;
+            min-width: 120px; /* 버튼 크기 조정 */
         }
 
         .icon-button i {
