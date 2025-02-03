@@ -154,32 +154,39 @@
             margin-top: 15px;
         }
 
-        .icon-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #f5f5f5;
-            color: black;
-            text-decoration: none;
-            font-size: 16px;
-            font-family: 'Pretendard', sans-serif; /* Pretendard 폰트 적용 */
-            padding: 10px 20px;
-            margin: 5px;
-            border-radius: 15px;
-            border: 1px solid #ccc;
-            transition: background-color 0.3s, transform 0.2s;
-            width: auto;
-            min-width: 120px; /* 버튼 크기 조정 */
-        }
-
-        .icon-button i {
-            margin-right: 8px;
-        }
-
-        .icon-button:hover {
-            background-color: #ddd;
-            transform: scale(1.05);
-        }
+	.button-container {
+	    text-align: center;
+	    margin-top: 15px;
+	}
+	
+	.icon-button {
+	    display: inline-flex;
+	    align-items: center;
+	    justify-content: center;
+	    background-color: #f5f5f5;
+	    color: black;
+	    text-decoration: none;
+	    font-size: 16px;
+	    font-family: 'Pretendard', sans-serif;
+	    padding: 10px 20px;
+	    margin: 5px;
+	    border-radius: 15px;
+	    border: 1px solid #ccc;
+	    transition: background-color 0.3s, transform 0.2s;
+	    width: auto; /* 원래 크기로 복원 */
+	    min-width: unset; /* 버튼 최소 크기 설정 제거 */
+	    text-align: center; /* 텍스트 중앙 정렬 */
+	}
+	
+	.icon-button i {
+	    margin-right: 8px;
+	    font-size: 1em; /* 아이콘 크기 원래대로 */
+	}
+	
+	.icon-button:hover {
+	    background-color: #ddd;
+	    transform: scale(1.05);
+	}
         
     </style>
     <script>
