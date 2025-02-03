@@ -139,6 +139,36 @@
             display: block;
             margin: 20px auto; /* 센터 정렬을 위해 추가 */
         }
+	.button-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .icon-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f5f5;
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: 'Times New Roman', serif;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .icon-button i {
+            margin-right: 8px;
+        }
+
+        .icon-button:hover {
+            background-color: #ddd;
+            transform: scale(1.05);
+        }
+	    
     </style>
 	<script>
 	MathJax = {
@@ -205,7 +235,15 @@
 	<p style="color:gray; font-size:0.8em; text-align:center; font-family: 'Times New Roman'">
 	    <sup>1</sup> Pukyong National University, <sup>2</sup> Pusan National University, <sup>3</sup> Busan MBC, <sup>4</sup> DM Studio
 	</p>
-
+	<!-- 아이콘 버튼 -->
+	<div class="button-container">
+	    <a href="https://github.com/" target="_blank" class="icon-button">
+	        <i class="fab fa-github"></i> GitHub
+	    </a>
+	    <a href="https://example.com/paper" target="_blank" class="icon-button">
+	        <i class="fas fa-file-alt"></i> Paper
+	    </a>
+	</div>
 
 
     <br/>
