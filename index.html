@@ -9,7 +9,7 @@
         * {
             margin: 0;
             padding: 0;
-/*             font-family: 'Pretendard', sans-serif; /* Pretendard 폰트 적용 */ */
+            font-family: 'Pretendard', sans-serif; /* Pretendard 폰트 적용 */
         }
 
         ul li {
@@ -18,6 +18,7 @@
 
         a {
             text-decoration: none;
+            color: #333;
         }
 
         #menu {
@@ -180,9 +181,6 @@
 	    background-color: #ddd;
 	    transform: scale(1.05);
 	}
-    	.blue-link {
-	    color: #1E90FF !important;
-	}
         
     </style>
     <script>
@@ -203,7 +201,7 @@
 
 <body>
 	
-<!-- <div style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%); background-color: white; padding: 10px; text-align: center; white-space: nowrap; z-index: 9999; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+<div style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%); background-color: white; padding: 10px; text-align: center; white-space: nowrap; z-index: 9999; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
   <a href="#section1" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">Dynamic Scene Video</a>
   <a href="#section2" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">Overall Framework</a>
   <a href="#section3" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">3D Motion Optimization Module</a>
@@ -217,7 +215,7 @@
   <a href="#section11" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">Long Video Results</a>
   <a href="#section12" style="display: inline-block; margin: 0 8px; padding: 5px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; background-color: white; font-size: 12px;">Multi-view Rendered RGB Images</a>
 </div>
- -->
+
 
 
 
@@ -235,36 +233,10 @@
 <div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
         <br/>
     <br/>
-
-<h1 style="font-size:2.0em; text-align:center;">
-  Optimizing 4D Gaussians for Dynamic Scene Video from Single Landscape Images
-</h1>
-<br/>
-<h2>
-  <p style="font-size:0.9em; text-align:center;">
-      <a href="https://www.pnu-cvsp.com/members/inhwan" target="_blank" class="blue-link">In-Hwan Jin</a><sup>*1</sup>, 
-      <a href="https://www.pnu-cvsp.com/members/haesoo" target="_blank" class="blue-link">Haesoo Choo</a><sup>*2</sup>, 
-      <a href="https://www.pnu-cvsp.com/members/shj" target="_blank" class="blue-link">Seong-Hun Jeong</a><sup>1</sup>, 
-      Park Heemoon</a><sup>3</sup>,<br>
-      Junghwan Kim</a><sup>4</sup>, 
-      Oh-joon Kwon</a><sup>5</sup>, and 
-      <a href="https://www.pnu-cvsp.com/prof" target="_blank" class="blue-link">Kyeongbo Kong</a><sup>1†</sup>
-  </p>
-</h2>
-	
-<p style="color:gray; font-size:0.8em; text-align:center;">
-    <sup>*</sup> Equal contribution &nbsp;&nbsp;&nbsp; <sup>†</sup> Corresponding author
-</p>
-<br/>
-<p style="font-size:1.1em; text-align:center;">
-    <sup>1</sup> Pusan National University, <sup>2</sup> Pukyong National University, <sup>3</sup> Busan MBC, <sup>4</sup> Korea University, <sup>5</sup> DM Studio
-</p>
-
-	
-<!--     <h1><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman'">Optimizing 4D Gaussians for Dynamic Scene Video from Single Landscape Images</p></h1>
+    <h1><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman'">Optimizing 4D Gaussians for Dynamic Scene Video from Single Landscape Images</p></h1>
     <br/>
     <h2>
-    <p style="font-size:0.9em; text-align:center;">
+    <p style="font-size:1.1em; text-align:center; font-family: 'Times New Roman'">
         In-Hwan Jin<sup>*1</sup>, Haesoo Choo<sup>*2</sup>, Seong-Hun Jeong<sup>1</sup>, Park Heemoon<sup>3</sup>,<br>
         Junghwan Kim<sup>4</sup>, Oh-joon Kwon<sup>5</sup>, and Kyeongbo Kong<sup>1†</sup>
     </p>
@@ -276,7 +248,7 @@
 	    <br/>
 	<p style="font-size:1.1em; text-align:center; font-family: 'Times New Roman'">
 	    <sup>1</sup> Pusan National University, <sup>2</sup> Pukyong National University, <sup>3</sup> Busan MBC, <sup>4</sup> Korea University, <sup>5</sup> DM Studio
-	</p> -->
+	</p>
 	
 	<div class="button-container">
 	    <!-- Paper Link -->
@@ -298,7 +270,7 @@
 	    </a>
 	
 	    <!-- GitHub Link -->
-	    <a href="https://github.com/InHwanJin/3DMOM"
+	    <a href="https://github.com/cvsp-lab/ICLR_3D_MOM"
 	       class="icon-button">
 	        <span class="icon">
 	            <i class="fab fa-github"></i>
@@ -503,7 +475,7 @@
     <br/>
     </div>
     </div>
-<!--     <br/><h2 id="section1"> </h2> -->
+    <br/><h2 id="section1"> </h2>
 	<br/>
 	<br/>
 	<br/>
@@ -543,7 +515,7 @@
         <br/><p id="method">
     </div>
     </div>
-<!--     <br/><h2 id="section2"> </h2> -->
+    <br/><h2 id="section2"> </h2>
 	    <br/>
 	    <br/>
 	    <br/>
@@ -579,7 +551,7 @@
     </div>
 
 	
-<!-- 	<br/><h2 id="section3"> </h2> -->
+	<br/><h2 id="section3"> </h2>
 	    <br/>
 	    <br/>
 	    <br/>
@@ -613,7 +585,7 @@
     <br/>
     </div>
     </div>
-<!-- 	<br/><h2 id="section4"> </h2> -->
+	<br/><h2 id="section4"> </h2>
 	    <br/>
 	    <br/>
 	    <br/>
@@ -792,7 +764,7 @@
 
 
 	
-<!--      <br/><h2 id="section5"> </h2> -->
+     <br/><h2 id="section5"> </h2>
 	    <br/>
 	    <br/>
 	    <br/>
@@ -894,7 +866,7 @@
 
 
 		
-<!--     <br/><h2 id="section6"> </h2> -->
+    <br/><h2 id="section6"> </h2>
     <br/>
 	<br/>	
     <br/>
@@ -967,7 +939,7 @@
     <br/><p id="Quantitative_results_1"></p>
     </div>
     </div>
-<!-- 	<br/><h2 id="section7"> </h2> -->
+	<br/><h2 id="section7"> </h2>
     <br/>
     <br/>
     <br/>
@@ -1037,7 +1009,7 @@
 
         
 		
-<!--     <br/><h2 id="section8"> </h2> -->
+    <br/><h2 id="section8"> </h2>
 	    <br/>
 	    <br/>
 	    <br/>
@@ -1103,7 +1075,7 @@
     </div>
     </div>
 
-<!--     <br/><h2 id="section9"> </h2> -->
+    <br/><h2 id="section9"> </h2>
 	    <br/>
 	    <br/>
 	    <br/>
@@ -1159,7 +1131,7 @@
     </div>
     </div>
 
-<!--     <br/><h2 id="section10"> </h2> -->
+    <br/><h2 id="section10"> </h2>
     <br/>
     <br/>
     <br/>
@@ -1224,7 +1196,7 @@
     </div>
     </div>
 
-<!--     <br/><h2 id="section12"> </h2> -->
+    <br/><h2 id="section12"> </h2>
     <br/>
     <br/>
     <br/>
@@ -1265,7 +1237,7 @@
     </div>
     </div>
     	    
-<!--     <br/><h2 id="section11"> </h2> -->
+    <br/><h2 id="section11"> </h2>
     <br/>
 	<br/>	
 	    <br/>
